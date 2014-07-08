@@ -3,3 +3,10 @@ python:
 - '2.7'
 install: pip install -r requirements.txt
 script: python app_tests.py
+deploy:
+  provider: heroku
+  api_key:
+    secure: F6GiVtmqTjyykkVPOP6EYoZ/krPzK7fRq1ogqa8g68IzsCjDaCyO2/QZBmj9NFKVz2QdRtxjjE8VFXxhx/0AX/WRIQOwTi81Qcwow82m4D0SNH9PN1PmKQz+QVEa9TGFqYRFqzm4beRoYtHi4TwyaXMOC7N7IcDjgkrATFsQTvY=
+  app: fierce-stream-1511
+  on:
+    repo: matthew-shaw/flask_test
